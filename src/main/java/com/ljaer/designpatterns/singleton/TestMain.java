@@ -17,8 +17,8 @@ public class TestMain {
             System.out.println("创建的不是同一个实例" + ts1.getName());
         }
 
-        Singleton4 ts3 = Singleton4.getInstance();
-        Singleton4 ts4 = Singleton4.getInstance();
+        LazyInnerClassSingleton ts3 = LazyInnerClassSingleton.getInstance();
+        LazyInnerClassSingleton ts4 = LazyInnerClassSingleton.getInstance();
         if(ts3 == ts4){
             System.out.println("创建的是同一个实例" + ts1);
         }else{
